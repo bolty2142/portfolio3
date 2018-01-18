@@ -20,7 +20,7 @@ const Projects = (props) => {
     {id: 2, title: 'Tetris', img: tetris, href:'http://tetris.andrewlangford.net'},
     {id: 3, title: 'On-The-Line', img: otl, href:'https://github.com/Dream-Team99/On-The-Line-app'},
     {id: 4, title: 'Adobe Clone', img: adobe, href:'http://adobe.andrewlangford.net'},
-    {id: 5, title: 'Board Game Shelf', img: bgs, href:'http://wwww.boardgameshelf.net'},
+    {id: 5, title: 'Board Game Shelf', img: bgs, href:'http://www.boardgameshelf.net'},
     {id: 6, title: 'W3Schools Clone', img: w3, href:'http://w3clone.andrewlangford.net'},
     {id: 7, title: 'Seek Adventure App', img: seek, href:'http://seek.andrewlangford.net'},
 
