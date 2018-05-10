@@ -45,7 +45,7 @@ const Welcome = (props) => {
         </Button>
       </Grid>
       <Grid item xs={12} className={ classes.centered }>
-        <Avatar src={ github } className={ classes.portrait } onClick={() => window.location = 'https://github.com/bolty2142'} />
+        <Avatar src={ github } className={ classes.portrait } onClick={() => window.location = 'https://github.com/alangford'} />
         <Avatar src={ linkedin } className={ classes.portrait } onClick={() => window.location = 'https://www.linkedin.com/in/andrewbl/'} />
         <Avatar src={ twitter } className={ classes.portrait } onClick={() => window.location = 'https://twitter.com/abl2142'} />
         <Avatar src={ facebook } className={ classes.portrait } onClick={() => window.location = 'https://www.facebook.com/andrew.langford.10'} />
