@@ -1,68 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# portfolio3
 
-## Available Scripts
+This is the third revision to my portfolio, this app was created to showcase my skills and projects I have worked on.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Must have [Node.js](https://nodejs.org/en/) version 8.4.0=> 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+### Installing
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the repo
 
-### `npm run build`
+```
+git clone https://github.com/bolty2142/portfolio3.git
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Run 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```  yarn install  ```
 
-### `npm run eject`
+Or 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+``` npm install ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Development
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Run
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+``` yarn startDev ```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will kick off the backend and start a development server that will update the frontend based on your changes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Running the tests
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Tests are ran with jest, To start the tests navigate into the frontend and run
 
-### Analyzing the Bundle Size
+ ``` yarn test ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+ Or
 
-### Making a Progressive Web App
+ ```npm test```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+ If you run into this error 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+ ``` node[73550] (FSEvents.framework) FSEventStreamStart: register_with_server: ERROR: f2d_register_rpc() => (null) (-22) ```
 
-### Deployment
+ You will have to  ``` brew install watchman ``` or reinstall watchman
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Deployment
+
+This app is just a static webpage, once pushed to the master branch will be built and then pushed to the AWS S3 bucket where it's hosted 
+
+
+
+## Built With
+
+* [React v16.0.0](https://reactjs.org/) - The web framework used
+* [Redux](http://redux.js.org/) - State management
+* [Material-UI](https://material-ui-next.com) - Styling
+* [Jest](https://facebook.github.io/jest/) - Used to run tests
+
+
+
+## Authors
+
+* **Andrew Langford** - *inital work* - [GitHub Link](https://github.com/alangford)
+
+See also the list of [contributors](https://github.com/alangford/portfolio3/graphs/contributors) who participated in this project

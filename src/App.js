@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Route, Switch, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { withStyles } from '@material-ui/core/styles';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import LandingPage from './components/LandingPage';
+import ErrorBoundry from './components/ErrorBoundry';
+
+
+export class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      open: false
+    }
+  }
+  handleDrawerOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleDrawerClose = () => {
+    this.setState({ open: false });
+  };
+
+  render() {
+    return (
+  
+          <Switch>
+            <Route exact path="/" component={ LandingPage } />
+            <Route component={ ErrorBoundry } />
+          </Switch>
+       
+    );
+  }
 }
 
-export default App;
+const styles = theme => ({
+
+});
+
+const mapStateToProps = state => ({ 
+
+});
+
+const AppWithStyle = withStyles(styles)(App);
+
+export default withRouter(connect(mapStateToProps, {
+
+})(AppWithStyle));
+
