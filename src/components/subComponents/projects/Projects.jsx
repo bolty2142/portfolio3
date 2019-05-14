@@ -1,8 +1,8 @@
 import React from 'react';
-import { withStyles } from 'material-ui/styles';
-import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
-import Typography from 'material-ui/Typography';
-import Grid from 'material-ui/Grid';
+import { withStyles } from '@material-ui/core/styles';
+import GridList, { GridListTile, GridListTileBar } from '@material-ui/core/GridList';
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 import * as adobe from './assets/adobe.png';
 import * as bgs from './assets/bgs.png';
@@ -13,22 +13,24 @@ import * as vr from './assets/vr.png';
 import * as w3 from './assets/w3clone.png';
 import * as otl from './assets/otl.png';
 
-const Projects = (props) => {
-  const projectList = [
-    {id: 8, title: 'VR Portfolio', img: vr, href:'http://vr.andrewlangford.net'},
-    {id: 1, title: 'Pong', img: pong, href:'http://pong.andrewlangford.net'},
-    {id: 2, title: 'Tetris', img: tetris, href:'http://tetris.andrewlangford.net'},
-    {id: 3, title: 'On-The-Line', img: otl, href:'https://github.com/Dream-Team99/On-The-Line-app'},
-    {id: 4, title: 'Adobe Clone', img: adobe, href:'http://adobe.andrewlangford.net'},
-    {id: 5, title: 'Board Game Shelf', img: bgs, href:'https://www.boardgameshelf.net'},
-    {id: 6, title: 'W3Schools Clone', img: w3, href:'http://w3clone.andrewlangford.net'},
-    {id: 7, title: 'Seek Adventure App', img: seek, href:'http://seek.andrewlangford.net'},
+const projectList = [
+  {id: 8, title: 'VR Portfolio', img: vr, href:'http://vr.alangford.io'},
+  {id: 1, title: 'Pong', img: pong, href:'http://pong.alangford.io'},
+  {id: 2, title: 'Tetris', img: tetris, href:'http://tetris.alangford.io'},
+  {id: 3, title: 'On-The-Line', img: otl, href:'https://github.com/Dream-Team99/On-The-Line-app'},
+  {id: 4, title: 'Adobe Clone', img: adobe, href:'http://adobe.alangford.io'},
+  {id: 5, title: 'Board Game Shelf', img: bgs, href:'https://www.boardgameshelf.net'},
+  {id: 6, title: 'W3Schools Clone', img: w3, href:'http://w3clone.alangford.io'},
+  {id: 7, title: 'Seek Adventure App', img: seek, href:'http://seek.alangford.io'},
 
-  ]
+]
+
+export const Projects = (props) => {
+
   const {
     classes,
   } = props;
-
+  
   return (
     <Grid container spacing={24} >
         <Grid item xs={12} justify="center" className={ classes.centered }>
@@ -37,17 +39,18 @@ const Projects = (props) => {
           </Typography>
         </Grid>
         <GridList className={classes.gridList} cols={1.5}>
-        {projectList.map(tile => (
+        {/* TODO: FIX THIS */}
+        {/* {projectList.map(tile => (
           <GridListTile key={tile.img} className={ classes.tile } onClick={() => window.location = tile.href}>
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
               title={tile.title}
               classes={{
+                root: classes.titleBar,
                 title: classes.title,
-              }}
-            />
-          </GridListTile>
-        ))}
+              }}/>
+              </GridListTile>
+            ))} */}
       </GridList> 
     </Grid>
 )}

@@ -1,11 +1,11 @@
 import React from 'react';
-import { withStyles } from 'material-ui/styles';
-import Avatar from 'material-ui/Avatar';
-import Typography from 'material-ui/Typography';
-import Grid from 'material-ui/Grid';
-import Button from 'material-ui/Button/Button';
-import Landscape from 'material-ui-icons/Landscape';
-import DownArrow from 'material-ui-icons/ArrowDownward'
+import { withStyles } from '@material-ui/core/styles';
+import Avatar from '@material-ui/core/Avatar';
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button/Button';
+import Landscape from '@material-ui/icons/Landscape';
+import DownArrow from '@material-ui/icons/ArrowDownward'
 import * as portrait from './assets/portrait.jpg';
 
 
@@ -48,7 +48,7 @@ const Welcome = (props) => {
       </Grid>
       <Grid item xs={6} className={ classes.centered }>
         <Button
-            raised
+            variant='contained'
             color="primary"
             title="Continue"
             onClick={() => scroll()}
@@ -58,10 +58,10 @@ const Welcome = (props) => {
       </Grid>
       <Grid item xs={6} className={ classes.centered }>
         <Button
-          raised
+          variant='contained'
           color="primary"
           title="Go Into VR!"
-          href="http://vr.andrewlangford.net"
+          href="http://vr.alangford.io"
         >
           Check it out in VR! <br/>   <Landscape />
         </Button>

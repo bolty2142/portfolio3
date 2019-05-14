@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import 'typeface-roboto'
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import createHistory from 'history/createBrowserHistory';
-import blueGrey from 'material-ui/colors/blueGrey';
-import grey from 'material-ui/colors/grey';
-import registerServiceWorker from './registerServiceWorker';
+import blueGrey from '@material-ui/core/colors/blueGrey';
+import grey from '@material-ui/core/colors/grey';
+import * as serviceWorker from './serviceWorker';
 
 import App from './App';
 import NavBar from './components/NavBar';
@@ -39,4 +39,5 @@ ReactDOM.render(
    </Provider>,
   document.getElementById('root'),
 );
-registerServiceWorker();
+
+serviceWorker.unregister();

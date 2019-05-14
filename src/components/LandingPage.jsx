@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import Grid from 'material-ui/Grid';
-import Paper from 'material-ui/Paper';
-import Card from 'material-ui/Card';
+import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Card from '@material-ui/core/Card';
 
 import Welcome from './subComponents/welcome/Welcome';
 import AboutMe from './subComponents/aboutMe/AboutMe';
@@ -25,27 +25,27 @@ class LandingPage extends Component {
     > 
     <Grid justify="space-around" container spacing={24}>
       <Grid item xs={12}>
-          <Card raised className={ classes.card }>
+          <Card variant='contained' className={ classes.card }>
             <Welcome />
           </Card>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Card raised className={ classes.heightCard }>
+          <Card variant='contained' className={ classes.heightCard }>
             <Skills />
           </Card>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Card raised className={ classes.heightCard }>
+          <Card variant='contained' className={ classes.heightCard }>
             <AboutMe />
           </Card>
         </Grid>
         <Grid item xs={12} md={12}>
-          <Card raised className={ classes.card }>
+          <Card variant='contained' className={ classes.card }>
             <Projects />
           </Card>
         </Grid>
         <Grid item xs={12} md={12}>
-          <Card raised className={ classes.card }>
+          <Card variant='contained' className={ classes.card }>
             <Contact />
           </Card>
         </Grid>
