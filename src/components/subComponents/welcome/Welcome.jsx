@@ -32,17 +32,17 @@ const Welcome = (props) => {
         <Avatar src={ portrait } className={ classes.portrait } />
       </Grid>
       <Grid item xs={12} className={ classes.centered }>
-        <Typography align="center"  color="secondary" type="display1">
+        <Typography align="center"  color="secondary" variant="display1">
             Hello! my name is 
         </Typography>
       </Grid>
       <Grid item xs={12} className={ classes.centered }>
-        <Typography align="center"  color="secondary" type="display3">
+        <Typography align="center"  color="secondary" variant="display3">
             Andrew Langford
         </Typography>
       </Grid>
       <Grid item xs={12} className={ classes.centered }>
-        <Typography align="center"  color="secondary" type="display1">
+        <Typography align="center"  color="secondary" variant="display1">
             Welcome to my portfolio!
         </Typography>
       </Grid>

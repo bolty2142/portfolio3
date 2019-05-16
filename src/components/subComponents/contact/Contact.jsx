@@ -20,17 +20,17 @@ const Welcome = (props) => {
   return (
   <Grid container spacing={24}>
       <Grid item xs={12} className={ classes.centered }>
-      <Typography color="secondary" type="display1">
+      <Typography color="secondary" variant="display1">
             Contact
         </Typography>
       </Grid>
       <Grid item xs={12} md={4} className={ classes.centered }>
-        <Typography align="center" color="secondary" type="display1">
+        <Typography align="center" color="secondary" variant="display1">
             phone: 801-694-7838
         </Typography>
       </Grid>
       <Grid item xs={12} md={4} className={ classes.centered }>
-        <Typography align="center" color="secondary" type="display1">
+        <Typography align="center" color="secondary" variant="display1">
             email: a.b.l.2142@gmail.com
         </Typography>
       </Grid>

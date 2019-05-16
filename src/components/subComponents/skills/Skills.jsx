@@ -4,12 +4,11 @@ import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import Dialog, {
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-} from '@material-ui/core/Dialog';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent'
+import DialogContentText from '@material-ui/core/DialogContentText'
+import DialogTitle from '@material-ui/core/DialogTitle'
 
 import * as js from './assets/js.png'
 import * as reac from './assets/react.png'
@@ -63,7 +62,7 @@ class Skills extends Component {
         {id:17, name: 'Gulp', img: gulp},
         {id:18, name: 'Git', img: git},
       ],
-      message: 'Hey if you keep deleting my skills I won\'t be able to get a job!',
+      message: `Hey if you keep deleting my skills I will be skilless!`,
       modal: false
     }
   }
@@ -76,7 +75,7 @@ class Skills extends Component {
     const skillToDelete = skillData.indexOf(data);
     skillData.splice(skillToDelete, 1);
     if (skillData.length === 9) this.setState({ modal: true });
-    if (skillData.length === 0) this.setState({ modal: true, message: 'Oh noe! I\'m done for...' });
+    if (skillData.length === 0) this.setState({ modal: true, message: `Oh noe! I'm done for...` });
     this.setState({ skills: skillData });
   };
 
@@ -94,7 +93,7 @@ class Skills extends Component {
       return (
       <Grid container spacing={40} >
         <Grid item xs={12} justify="center" className={ classes.centered }>
-          <Typography color="secondary" type="display1">
+          <Typography color="secondary" variant="display1">
               Skills
           </Typography>
         </Grid>
@@ -103,7 +102,7 @@ class Skills extends Component {
 
               <Avatar className={ classes.icon } src={ val.img } onClick={() => this.handleDelete(val)} />
                 <Typography
-                  type="headline"
+                  variant="headline"
                 >
                 {val.name}
                 </Typography>

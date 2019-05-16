@@ -1,6 +1,8 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import GridList, { GridListTile, GridListTileBar } from '@material-ui/core/GridList';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import GridListTileBar from '@material-ui/core/GridListTileBar';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
@@ -34,13 +36,12 @@ export const Projects = (props) => {
   return (
     <Grid container spacing={24} >
         <Grid item xs={12} justify="center" className={ classes.centered }>
-          <Typography color="secondary" type="display1">
+          <Typography color="secondary" variant="display1">
               Projects
           </Typography>
         </Grid>
         <GridList className={classes.gridList} cols={1.5}>
-        {/* TODO: FIX THIS */}
-        {/* {projectList.map(tile => (
+        {projectList.map(tile => (
           <GridListTile key={tile.img} className={ classes.tile } onClick={() => window.location = tile.href}>
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
@@ -50,7 +51,7 @@ export const Projects = (props) => {
                 title: classes.title,
               }}/>
               </GridListTile>
-            ))} */}
+            ))}
       </GridList> 
     </Grid>
 )}
