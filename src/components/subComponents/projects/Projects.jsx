@@ -7,7 +7,6 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
 import * as adobe from './assets/adobe.png';
-import * as bgs from './assets/bgs.png';
 import * as pong from './assets/pong.png';
 import * as seek from './assets/seek.png';
 import * as tetris from './assets/tetris.png';
@@ -21,9 +20,8 @@ const projectList = [
   {id: 2, title: 'Tetris', img: tetris, href:'http://tetris.alangford.io'},
   {id: 3, title: 'On-The-Line', img: otl, href:'https://github.com/Dream-Team99/On-The-Line-app'},
   {id: 4, title: 'Adobe Clone', img: adobe, href:'http://adobe.alangford.io'},
-  {id: 5, title: 'Board Game Shelf', img: bgs, href:'https://www.boardgameshelf.net'},
-  {id: 6, title: 'W3Schools Clone', img: w3, href:'http://w3clone.alangford.io'},
-  {id: 7, title: 'Seek Adventure App', img: seek, href:'http://seek.alangford.io'},
+  {id: 5, title: 'W3Schools Clone', img: w3, href:'http://w3clone.alangford.io'},
+  {id: 6, title: 'Seek Adventure App', img: seek, href:'http://seek.alangford.io'},
 
 ]
 
